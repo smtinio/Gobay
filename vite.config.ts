@@ -10,6 +10,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  // Set base to './' so all asset paths are relative — required for GitHub Pages
+  // which serves from a subdirectory (e.g. https://user.github.io/repo-name/)
+  base: './',
   resolve: {
     alias: {
       // Alias @ to the src directory
